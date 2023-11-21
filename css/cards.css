@@ -1,0 +1,133 @@
+/* main {
+    padding: 5rem;
+    background-color: #222;
+    font-family: Roboto, sans-serif;
+} */
+
+.cards {
+    max-width: 900px;
+    margin: auto;
+}
+
+.card {
+    transition: transform 300ms ease-in-out, box-shadow 400ms ease, border 500ms linear;
+    transform: scale(1);
+    background-color: dogerblue;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid #ffffff3d;
+    text-align: center;
+    overflow: hidden;
+    aspect-ratio: 3/4;
+    display: flex;
+    align-items: end;
+    position: relative;
+    box-shadow: 0 0px 20px rgba(0, 0, 0, 0.5);
+}
+
+.card__content {
+    margin: 0 auto;
+    color: #fff;
+}
+
+.card__content h2 {
+    color: #fff;
+    font-size: 1.25rem;
+    margin: 0;
+    text-shadow: 0 2px 10px black;
+}
+
+.card__content p {
+    font-size: 0.75rem;
+    margin: 0.5em 0 1em 0;
+}
+
+.card__content button {
+    padding: 0.5rem 1.25rem;
+    border: 1px solid #2563EB;
+    background: #2563EB;
+    background: #2563EB;
+    color: #fff;
+    cursor: pointer;
+    font-size: 0.75rem;
+    transition: ease-in-out 500ms !important;
+}
+
+.card__content button:hover {
+    background-color: transparent;
+    /* transition: ease-in-out 500ms !important; */
+    transform: rotate(6deg) !important;
+}
+
+.card__content .card__content-bg {
+    transition: all 350ms ease-in-out;
+    background-color: rgba(0, 0, 0, 0);
+    position: absolute;
+    /* top: 70%;
+    left: 50%;
+    right: 50%;
+    bottom: 20%;
+    z-index: 0; */
+}
+
+.card__content img {
+    transition: transform 750ms ease-in-out;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    max-width: 100%;
+}
+
+.card__content h2,
+.card__content p,
+.card__content button {
+    transition: transform 350ms ease-in-out;
+    transform: translateY(80vh) scale(2.4);
+    position: relative;
+    z-index: 1;
+}
+
+.card__content h2 {
+    transition: all 350ms ease-in-out;
+    transform: translateY(6rem) scale(1);
+    margin-bottom: 2rem;
+}
+
+.card__content p {
+    transition-delay: 50ms;
+}
+
+.card__content button {
+    transition-delay: 100ms;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0px 20px rgba(0, 0, 0, 0.50);
+    border-color: #333;
+}
+
+.card:hover .card__content h2,
+.card:hover .card__content p,
+.card:hover .card__content button {
+    transform: translateY(0) scale(1);
+}
+
+.card:hover .card__content h2 {
+    color: #2563EB;
+    font-size: 1.75rem;
+}
+
+.card:hover .card__content img {
+    filter: blur(2px);
+    transform: translateY(0) scale(1.2);
+}
+
+.card:hover .card__content-bg {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}

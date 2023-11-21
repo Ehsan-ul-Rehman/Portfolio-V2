@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.4/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/cards.css">
+    <link rel="stylesheet" href="./testimonials.css">
+    <!-- <link rel="stylesheet" href="./css/parallex.css"> -->
+    <title>Document</title>
+</head>
+
+<body class="m-0 p-0">
+
+    <div class="header">
+        <div class="md:p-12 p-4">
+
+            <div class="glass" id="home">
+
+                <nav class="colorful-div glass m-2">
+                    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 md:px-8">
+                        <h1 class="font-extrabold text-2xl text-blue-600">PORTFOLIO</h1>
+                        <button data-collapse-toggle="navbar-default" type="button"
+                            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-600 dark:focus:ring-gray-600"
+                            aria-controls="navbar-default" aria-expanded="false">
+                            <span class="sr-only">Open main menu</span>
+                            <i class="fa-solid fa-bars text-2xl"></i>
+                        </button>
+                        <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+                            <ul
+                                class="font-medium flex flex-col p-4 md:p-0 mt- md:flex-row md:space-x-8 rtl:space-x-reverse">
+                                <li>
+                                    <a href="#home"
+                                        class="block py-2 px-3 text-blue-600"
+                                        aria-current=".header">Home</a>
+                                </li>
+                                <li>
+                                    <a href="#about"
+                                        class="block py-2 px-3 text-white rounded hover:text-blue-600">About</a>
+                                </li>
+                                <!-- <li>
+                                    <a href="#skills"
+                                        class="block py-2 px-3 text-white rounded hover:text-blue-600">Skills</a>
+                                </li> -->
+                                <li>
+                                    <a href="#portfolio"
+                                        class="block py-2 px-3 text-white rounded hover:text-blue-600">Portfolio</a>
+                                </li>
+                                <li>
+                                    <a href="#services"
+                                        class="block py-2 px-3 text-white rounded hover:text-blue-600">Services</a>
+                                </li>
+                                <li>
+                                    <a href="#testimonials"
+                                        class="block py-2 px-3 text-white rounded hover:text-blue-600">Testimonials</a>
+                                </li>
+                                <li>
+                                    <a href="#contact"
+                                        class="block py-2 px-3 text-white rounded hover:text-blue-600">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+
+                <div class="md:flex">
+                    <div class="container lg:p-12 p-4 my-auto md:w-1/2 colorful-div">
+                        <h1 class="text-white font-bold text-2xl py-2">Hello, Its Me</h1>
+                        <h1 class="text-white font-bold lg:text-5xl text-3xl">Ehsan-ul-Rehman</h1>
+                        <h1 class="text-white font-bold lg:text-3xl text-2xl -my-4"><br>And I,m a <span
+                                class="txt-type text-blue-600" data-wait="3000"
+                                data-words='[" FrontEnd Developer,", "BackEnd Developer,", "Youtuber,", "Graphics Designer,"]'></span>
+                        </h1>
+                        <p class="text-white mt-12 text-sm">Web developer with a passion for crafting dynamic and
+                            user-friendly websites. Explore my portfolio for a glimpse into the seamless blend of design
+                            and functionality.</p>
+
+                        <div class="social-container">
+                            <ul class="social-icons">
+                                <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                            </ul>
+                        </div>
+
+                        <div class="flex">
+                            <button
+                                class="bg-blue-600 text-white px-4 py-2 rounded-full border hover:rotate-6 border-blue-600 hover:bg-transparent hover:scale-105 transition">Download
+                                CV</button>
+                        </div>
+                    </div>
+
+                    <div class="md:w-1/2 mt-auto">
+                        <img src="./img/ehsan1.png" alt=""
+                            class="mx-auto filter-none w-auto man-img lg:px-20 2xl:px-32">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="about" class="about md:p-12 p-4">
+        <div class="glass flex md:flex-row flex-col-reverse">
+            <div class="md:w-1/2 mt-auto">
+                <img src="./img/man.png" alt="" class="mx-auto w-auto lg:px-20 md:px-8 2xl:px-32"
+                    style="filter: grayscale(100%);">
+            </div>
+            <div class="md:w-1/2 colorful-div my-auto lg:p-12 p-4">
+                <h1 class="text-white font-extrabold text-4xl py-3">About <span class="text-blue-600">Me!</span></h1>
+                <h1 class="text-2xl text-white font-bold py-3">Full Stack Developer</h1>
+                <p class="text-white text-base leading-relaxed py-3">I have been working as a web developer since
+                    2018. I have worked on many projects and have a good experience in web development. I have
+                    worked on many projects and have a good experience in web development.</p>
+                <div class="flex">
+                    <button
+                        class="bg-blue-600 text-white my-3 px-4 py-2 rounded-full hover:rotate-6 border border-blue-600 hover:bg-transparent hover:scale-105 transition">Read
+                        More</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <div id="skills" class="skills md:p-12 p-4 colorful-div">
+        <div class="glass lg:p-12 p-4">
+            <h1 class="text-white font-extrabold text-4xl md:pb-12 pb-6 text-center">My <span
+                    class="text-blue-600">Skills</span></h1>
+            <div class="md:flex">
+                <div class="md:w-1/3 my-">
+                    <h1 class="text-white md:text-3xl text-2xl pb-6 font-bold underline decoration-blue-500">Technical
+                        Expertise
+                    </h1>
+                    <p class="text-white text-sm ">
+                        I'm your go-to expert for creating stunning websites. Specializing in frontend magic with HTML,
+                        CSS, and JavaScript, I ensure seamless user experiences. I'm not just about looks; I also handle
+                        the backend using Node.js and Python. With a flair for graphics designing, I craft eye-catching
+                        logos and elements to make your site stand out. If you want a web expert to make your online
+                        presence both beautiful and functional, you're in the right place!</p>
+                </div>
+                <div class="md:w-2/3 md:ml-4 md:mt-0 mt-8">
+                    <div class="grid lg:grid-cols-2 grid-cols-1 gap-4">
+                        <div class="w-full glass p-4">
+                            <h1 class="text-2xl text-white font-semibold pb-4">Frontend Development
+                                <span><i class="fa-solid fa-code text-blue-500 px-2"></i></span>
+                            </h1>
+                            <p class="text-sm text-white pb-4">
+                                I specialize in creating visually appealing and responsive websites using HTML, CSS, and
+                                JavaScript. My expertise includes popular frontend frameworks such as React.js and
+                                Angular.js. Additionally, I leverage the power of Bootstrap and Tailwind CSS to enhance
+                                the design and functionality of web applications. With a keen eye for detail and a
+                                commitment to user-centric design, I bring a dynamic and creative approach to frontend
+                                development, ensuring seamless and engaging user experiences.
+                            </p>
+                            <div class="progress">
+                                <h1 class="text-blue-500 text-xl font-semibold pb-2">Expertise</h1>
+                                <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
+                                    <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full"
+                                        style="width: 85%"> 85%</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-full glass p-4">
+                            <h1 class="text-2xl text-white font-semibold pb-4">Backend Development
+                                <span><i class="fa-solid fa-terminal text-blue-500 px-2"></i></span>
+                            </h1>
+                            <p class="text-sm text-white pb-4">
+                                I specialize in backend development, utilizing Node.js, Python, and Php to create
+                                scalable server-side solutions. Proficient in database management with MySQL and
+                                MongoDB, I design secure APIs for dynamic web applications. My expertise includes server
+                                architecture, deployment using technologies like Express.js and Django, and a commitment
+                                to optimizing performance for reliable backend systems.
+                            </p>
+                            <div class="progress">
+                                <h1 class="text-blue-500 text-xl font-semibold pb-2">Expertise</h1>
+                                <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
+                                    <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full"
+                                        style="width: 60%"> 60%</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-full glass p-4">
+                            <h1 class="text-2xl text-white font-semibold pb-4">Graphics Designing
+                                <span><i class="fa-solid fa-pencil text-blue-500 px-2"></i></span>
+                            </h1>
+                            <p class="text-sm text-white pb-4">
+                                I possess foundational skills in graphics design, adept at translating ideas into
+                                visually compelling creations. Proficient in tools like Adobe Photoshop and Illustrator,
+                                I bring a creative touch to projects through the use of color, typography, and layout.
+                                With an eye for detail, I specialize in crafting engaging visuals for various digital
+                                platforms. My understanding of design principles allows me to produce clean,
+                                aesthetically pleasing graphics, ensuring a cohesive and polished look for a wide range
+                                of applications.
+                            </p>
+                            <div class="progress">
+                                <h1 class="text-blue-500 text-xl font-semibold pb-2">Expertise</h1>
+                                <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
+                                    <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full"
+                                        style="width: 70%"> 75%</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-full glass p-4"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <div id="portfolio" class="portfolio md:p-12 p-4">
+        <div class="glass md:p-12 p-4">
+            <h1 class="text-white font-extrabold text-4xl md:pb-12 pb-6 text-center colorful-div">Latest <span
+                    class="text-blue-600">Projects</span></h1>
+            <main>
+                <div class="cards grid md:grid-cols-3 grid-cols-1 gap-8">
+                    <div class="card md:mx-0 mx-4">
+                        <div class="card__content">
+                            <h2 class=" colorful-div">Waterfall</h2>
+                            <p>lorem ipsum dolor sit amet ipsum dolor sit amet</p>
+                            <button type="button" class="rounded-full colorful-div">Show more</button>
+                            <div class="card__content-bg"></div>
+                            <img src="https://cdn.pixabay.com/photo/2018/03/29/07/35/water-3271579_960_720.jpg">
+                        </div>
+                    </div>
+                    <div class="card md:mx-0 mx-4">
+                        <div class="card__content">
+                            <h2 class=" colorful-div">River</h2>
+                            <p>lorem ipsum dolor sit amet ipsum dolor sit amet</p>
+                            <button type="button" class="rounded-full colorful-div">Show more</button>
+                            <div class="card__content-bg"></div>
+                            <img src="https://cdn.pixabay.com/photo/2020/12/09/04/01/iceland-5816353_960_720.jpg">
+                        </div>
+                    </div>
+                    <div class="card md:mx-0 mx-4">
+                        <div class="card__content">
+                            <h2 class=" colorful-div">The Hills</h2>
+                            <p>lorem ipsum dolor sit amet ipsum dolor sit amet</p>
+                            <button type="button" class="rounded-full colorful-div">Show more</button>
+                            <div class="card__content-bg"></div>
+                            <img src="https://cdn.pixabay.com/photo/2020/08/01/12/18/winnats-pass-5455265_960_720.jpg">
+                        </div>
+                    </div>
+                    <div class="card md:mx-0 mx-4">
+                        <div class="card__content">
+                            <h2 class=" colorful-div">The Hills</h2>
+                            <p>lorem ipsum dolor sit amet ipsum dolor sit amet</p>
+                            <button type="button" class="rounded-full colorful-div">Show more</button>
+                            <div class="card__content-bg"></div>
+                            <img src="https://cdn.pixabay.com/photo/2020/08/01/12/18/winnats-pass-5455265_960_720.jpg">
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <div id="services" class="services colorful-div md:p-12 p-4">
+        <div class="glass md:p-12 p-4">
+            <h1 class="text-white font-extrabold text-4xl md:pb-12 pb-6 text-center">My <span
+                    class="text-blue-600">Services</span></h1>
+            <div class="grid md:grid-cols-3 grid-cols-1 lg:gap-8 gap-4">
+                <div class="glass p-4">
+                    <h1 class="text-2xl text-white font-semibold pb-4">Web Development
+                        <span><i class="fa-solid fa-globe text-blue-500 px-2"></i></span>
+                    </h1>
+                    <p class="text-white text-sm pb-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error
+                        pariatur placeat rerum eveniet, incidunt beatae voluptatum est natus dolor minus ducimus. Nobis
+                        commodi voluptatem iure expedita amet incidunt laboriosam magnam.</p>
+                    <button
+                        class="bg-blue-600 text-white my-3 px-4 py-2 rounded-full hover:rotate-6 border border-blue-600 hover:bg-transparent hover:scale-105 transition">Read
+                        More</button>
+                </div>
+                <div class="glass p-4">
+                    <h1 class="text-2xl text-white font-semibold pb-4">UX/UI to Frontend
+                        <span><i class="fa-brands fa-figma text-blue-500 px-2"></i></span>
+                    </h1>
+                    <p class="text-white text-sm pb-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error
+                        pariatur placeat rerum eveniet, incidunt beatae voluptatum est natus dolor minus ducimus. Nobis
+                        commodi voluptatem iure expedita amet incidunt laboriosam magnam.</p>
+                    <button
+                        class="bg-blue-600 text-white my-3 px-4 py-2 rounded-full hover:rotate-6 border border-blue-600 hover:bg-transparent hover:scale-105 transition">Read
+                        More</button>
+                </div>
+                <div class="glass p-4">
+                    <h1 class="text-2xl text-white font-semibold pb-4">Web Design
+                        <span><i class="fa-solid fa-palette text-blue-500 px-2"></i></span>
+                    </h1>
+                    <p class="text-white text-sm pb-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error
+                        pariatur placeat rerum eveniet, incidunt beatae voluptatum est natus dolor minus ducimus. Nobis
+                        commodi voluptatem iure expedita amet incidunt laboriosam magnam.</p>
+                    <button
+                        class="bg-blue-600 text-white my-3 px-4 py-2 rounded-full hover:rotate-6 border border-blue-600 hover:bg-transparent hover:scale-105 transition">Read
+                        More</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="testimonials" class="testimonials colorful-div md:p-12 p-4">
+        <div class="glass md:p-12 p-4">
+            <h1 class="text-white font-extrabold text-4xl md:pb-12 pb-6 text-center colorful-div">Testimonials</h1>
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide glass mb-8 h-40">Slide 1</div>
+                            <div class="swiper-slide glass mb-8 h-40">Slide 2</div>
+                            <div class="swiper-slide glass mb-8 h-40">Slide 3</div>
+                            <div class="swiper-slide glass mb-8 h-40">Slide 4</div>
+                        </div>
+                        <div class="swiper-pagination pb-0 relative"></div>
+                    </div>
+        </div>
+    </div>
+    </div>
+
+    <div id="contact" class="contact colorful-div">
+        <div class="glass border-none rounded-none">
+            <div class="glass md:p-12 p-4 border-none rounded-none">
+                <div class="md:flex gap-8">
+                    <div class="md:w-1/2 md:mx-20 my-auto">
+                        <h1 class="text-white text-4xl font-bold">Contact <span class="text-blue-600">Me</span></h1>
+                        <div class="flex mt-8">
+                            <i class="fa-solid fa-envelope text-blue-500 px-2 text-xl my-auto"></i>
+                            <p class="text-white">ehsanulrehman6@gmail.com</p>
+                        </div>
+                        <div class="flex mt-8">
+                            <i class="fa-solid fa-phone text-blue-500 px-2 text-xl my-auto"></i>
+                            <p class="text-white">+92 314 3704470</p>
+                        </div>
+                        <div class="social-container mt-8">
+                            <ul class="social-icons">
+                                <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                            </ul>
+                        </div>
+                        <button class="bg-blue-600 text-white px-4 py-2 rounded-full border hover:rotate-6 border-blue-600 hover:bg-transparent hover:scale-105 transition">Let's Talk</button>
+                    </div>
+                    <div class="md:w-1/2 md:mx-20 md:mt-0 mt-8">
+                        <form action="" class="p-8 border-2 border-blue-500 rounded-2xl">
+                            <input type="text" placeholder="Name" class="w-full glass p-3 text-sm rounded-xl">
+                            <input type="text" placeholder="Email" class="w-full glass p-3 text-sm rounded-xl mt-4">
+                            <input type="text" placeholder="Phone" class="w-full glass p-3 text-sm rounded-xl mt-4">
+                            <textarea name="" id=""rows="8" placeholder="Message" class="w-full glass p-3 text-sm rounded-xl mt-4"></textarea>
+                            <input type="submit" value="Send Message"
+                                class="mt-4 bg-blue-600 text-white px-4 py-2 rounded-full border hover:rotate-6 border-blue-600 hover:bg-transparent hover:scale-105 transition">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer bg-black absolute w-screen">
+            <h1 class="font-bold text-center text-lg py-4 text-white">EHSAN UL REHMAN</h1>
+
+            <div class="flex flex-wrap justify-evenly py-4 md:px-12 px-6">
+                <a href="#home" class="text-white hover:text-blue-500 px-4">Home</a>
+                <a href="#about" class="text-white hover:text-blue-500 px-4">About</a>
+                <a href="#skills" class="text-white hover:text-blue-500 px-4">Skills</a>
+                <a href="#portfolio" class="text-white hover:text-blue-500 px-4">Portfolio</a>
+                <a href="#services" class="text-white hover:text-blue-500 px-4">Services</a>
+                <a href="#testimonials" class="text-white hover:text-blue-500 px-4">Testiomials</a>
+                <a href="#contact" class="text-white hover:text-blue-500 px-4">Contact</a>
+            </div>
+
+            <span class="text-sm text-gray-500 py-1 flex justify-center">© 2022 All Rights Reserved | Design by 
+                <a href="#" class="text-blue-600"> Ehsan-ul-Rehman</a></span>
+        </div>
+    </div>
+
+    <div class="center-left-container">
+        <button
+            class="open-tray p-2 text-black my-auto border-l border-t border-b rounded-l-lg border-gray-500 bg-white"><i
+                class="fa-solid fa-angle-left"></i></button>
+        <div class="tray" id="tray">
+            <button onclick="changeHueRotate(0)" class="h-8 w-8 bg-blue-600 rounded-full"></button>
+            <button onclick="changeHueRotate(50)" class="h-8 w-8 bg-purple-600 rounded-full"></button>
+            <button onclick="changeHueRotate(120)" class="h-8 w-8 bg-[#DE2065] rounded-full"></button>
+        </div>
+    </div>
+
+    <!-- <div class="scrollElement"></div> -->
+
+    <script src="./js/script.js"></script>
+    <script src="./js/testimonials.js"></script>
+    <!-- <script src="./js/parallex.js"></script> -->
+
+</body>
+
+</html>
